@@ -28,6 +28,6 @@ public class Autor {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "autor")
     @JsonIgnore
-    private Set<Libro> libros = new HashSet<>();
+    private Set<Libro> libro;
 
 }
